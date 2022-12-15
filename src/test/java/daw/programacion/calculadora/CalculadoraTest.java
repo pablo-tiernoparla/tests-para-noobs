@@ -13,4 +13,12 @@ public class CalculadoraTest {
 
         assertEquals(expected, calc.sumar(num1, num2));
     }
+
+    public void cincoSumarSieteEsDoce(){
+        int expected = 12;
+        int num1 = 5, num2 = 7;
+        Calculadora calc = new Calculadora();
+
+        assertEquals(expected, calc.sumar(num1, num2));
+    }
 }
