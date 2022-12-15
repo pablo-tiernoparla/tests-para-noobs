@@ -32,4 +32,14 @@ public class CalculadoraTest {
         assertTrue("Tres mas siete deberia ser 10", expected == 
         calc.sumar(num1, num2));
     }
+
+    @Test
+    public void tresSumarSieteNoEsCien(){
+        int expected = 100;
+        int num1 = 3, num2 = 7;
+        Calculadora calc = new Calculadora();
+
+        assertFalse("Tres mas siete no deberia ser 100", expected == 
+        calc.sumar(num1, num2));
+    }
 }
