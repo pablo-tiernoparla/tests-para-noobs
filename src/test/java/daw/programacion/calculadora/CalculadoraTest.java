@@ -53,6 +53,15 @@ public class CalculadoraTest {
     }
 
     @Test
+    public void cincoMenosSieteEsMenosDos(){
+        int expected = -2;
+        int num1 = 5, num2 = 7;
+        Calculadora calc = new Calculadora();
+
+        assertEquals(expected, calc.restar(num1, num2));
+    }
+
+    @Test
     public void sietePorCincoEsTreintaCinco(){
         int expected = 35;
         int num1 = 7, num2 = 5;
