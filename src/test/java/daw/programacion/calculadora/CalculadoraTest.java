@@ -42,4 +42,22 @@ public class CalculadoraTest {
         assertFalse("Tres mas siete no deberia ser 100", expected == 
         calc.sumar(num1, num2));
     }
+
+    @Test
+    public void sieteMenosCincoEsDos(){
+        int expected = 2;
+        int num1 = 7, num2 = 5;
+        Calculadora calc = new Calculadora();
+
+        assertEquals(expected, calc.restar(num1, num2));
+    }
+
+    @Test
+    public void sietePorCincoEsTreintaCinco(){
+        int expected = 35;
+        int num1 = 7, num2 = 5;
+        Calculadora calc = new Calculadora();
+
+        assertEquals(expected, calc.multiplicar(num1, num2));
+    }
 }
