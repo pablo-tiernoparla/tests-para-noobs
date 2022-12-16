@@ -1,7 +1,7 @@
 package daw.programacion.calculadora;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
     
@@ -29,8 +29,7 @@ public class CalculadoraTest {
         int num1 = 3, num2 = 7;
         Calculadora calc = new Calculadora();
 
-        assertTrue("Tres mas siete deberia ser 10", expected == 
-        calc.sumar(num1, num2));
+        assertTrue(expected == calc.sumar(num1, num2), "Tres mas siete deberia ser 10");
     }
 
     @Test
@@ -39,8 +38,7 @@ public class CalculadoraTest {
         int num1 = 3, num2 = 7;
         Calculadora calc = new Calculadora();
 
-        assertFalse("Tres mas siete no deberia ser 100", expected == 
-        calc.sumar(num1, num2));
+        assertFalse(expected == calc.sumar(num1, num2), "Tres mas siete no deberia ser 100");
     }
 
     @Test
